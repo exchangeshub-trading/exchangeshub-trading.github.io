@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: { unoptimized: true },
   output: 'export',
+  distDir: 'dist',
   pageExtensions: ['ts', 'tsx', 'js', 'jsx'],
   reactStrictMode: true,
 }
