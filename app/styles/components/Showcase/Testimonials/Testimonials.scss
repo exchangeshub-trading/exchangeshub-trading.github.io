@@ -1,0 +1,110 @@
+.showcase-testimonials {
+  margin-bottom: 100px;
+  color: var(--white-color);
+
+  &-title {
+    margin-bottom: 30px;
+    font-size: 70px;
+    color: var(--white-color);
+
+    @media (max-width: 576px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 30px;
+    }
+  }
+
+  &-card {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+
+    @media (max-width: 992px) {
+      padding: 50px;
+      gap: 50px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 25px;
+    }
+  }
+
+  &-wrapper-image {
+    width: 35%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &-description {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  &-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &-image {
+      border-radius: 50%;
+    }
+
+    &-description {
+      text-align: center;
+    } 
+
+    &-position {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+
+    &-socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      & i {
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        background-color: var(--paragraph-color);
+        text-align: center;
+        color: var(--white-color);
+        font-size: var(--font-size);
+        border-radius: 50%;
+        transition: var(--transition);
+  
+        &:hover {
+          transform: translateY(-5px);
+          background-color: var(--scrollbar-track-color);
+          color: var(--white-color);
+        }
+      }
+    } 
+  }
+}

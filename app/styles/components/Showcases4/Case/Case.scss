@@ -1,0 +1,80 @@
+.single-cases {
+  margin-bottom: 30px;
+}
+.single-cases .cases-image {
+  overflow: hidden;
+  background-color: #262626;
+}
+.single-cases .cases-image img {
+  height: 460px;
+  object-position: center;
+  object-fit: contain;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.single-cases .cases-content {
+  margin-top: 30px;
+}
+.single-cases .cases-content .tags span {
+  color: var(--main-color);
+  padding: 5px 15px;
+  display: inline-block;
+  background-color: #404040;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  margin-right: 15px;
+}
+.single-cases .cases-content .tags span:hover {
+  background-color: var(--scrollbar-thumb-color);
+  color: var(--white-color);
+}
+.single-cases .cases-content h3 {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.single-cases .cases-content h3 span {
+  color: var(--paragraph-color);
+  position: relative;
+}
+.single-cases .cases-content h3 span::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid var(--main-color);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  z-index: -1;
+}
+.single-cases:hover .cases-image img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.single-cases:hover .cases-content h3 span {
+  color: var(--main-color);
+}
+.single-cases:hover .cases-content h3 span::before {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-cases .cases-content h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-cases .cases-content h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+}

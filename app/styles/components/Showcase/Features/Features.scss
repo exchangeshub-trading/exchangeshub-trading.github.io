@@ -1,0 +1,20 @@
+.showcase {
+  &-features {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &-feature {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &-description {
+      font-size: 20px;
+      font-weight: 500;
+      color: rgb(167, 167, 167);
+    }
+  }
+}

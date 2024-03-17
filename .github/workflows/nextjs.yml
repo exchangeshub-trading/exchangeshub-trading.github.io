@@ -3,7 +3,6 @@ name: nextjs
 on:
   push:
     branches:
-      - dev
       - main
   workflow_dispatch:
 
@@ -39,7 +38,7 @@ jobs:
         with:
           path: ./out
 
-  deploy:
+  redeploy:
     if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages

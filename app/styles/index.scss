@@ -1,0 +1,28 @@
+@import './lib/bootstrap.min.css';
+@import './lib/animate.min.css';
+@import './lib/remixicon.css';
+
+@import './global/global.scss';
+@import './responsive/responsive.scss';
+
+@import './pages/Home/Home.scss';
+@import './pages/404/404.scss';
+
+@import './components/Header/Header.scss';
+@import './components/Badge/Badge.scss';
+@import './components/MainBanner/MainBanner.scss';
+@import './components/Showcases4/Case/Case.scss';
+@import './components/Showcases4/Cases/Cases.scss';
+@import './components/Swipers/SwiperCases/Case/Case.scss';
+@import './components/Swipers/SwiperCases/Cases/Cases.scss';
+@import './components/Services/Services.scss';
+@import './components/Testimonials/Testimonials.scss';
+@import './components/Showcase/Header/Header.scss';
+@import './components/Showcase/Features/Features.scss';
+@import './components/Showcase/Summary/Summary.scss';
+@import './components/Showcase/TechnologyStack/TechnologyStack.scss';
+@import './components/Showcase/TechnologyStackDescription/TechnologyStackDescription.scss';
+@import './components/Showcase/Galleries/Galleries.scss';
+@import './components/Showcase/Testimonials/Testimonials.scss';
+@import './components/Footer/Footer.scss';
+@import './components/CookieConsent/CookieConsent.scss';

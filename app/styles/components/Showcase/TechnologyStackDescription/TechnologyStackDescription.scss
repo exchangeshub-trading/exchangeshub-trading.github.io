@@ -1,0 +1,109 @@
+.technology-stack-description {
+  margin-bottom: 100px;
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    position: relative;
+    border-top: 1px solid var(--paragraph-color);
+
+    &-wrapper {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        width: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 2px;
+        background: var(--white-color);
+        border-radius: 100px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+    
+      &-active::before {
+        width: 100%;
+      }
+    }
+
+    &-container {
+      overflow: hidden;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid var(--paragraph-color);
+    }
+
+    &-header {
+      display: flex;
+      gap: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      transition: color 0.3s ease-in-out;
+
+      &-active {
+        color: var(--white-color);
+
+        & .services-mobile-item-button {
+          border-color: var(--white-color);
+
+          &::before {
+            transform: rotate(45deg);
+            filter: brightness(250%);
+          }
+        }
+      }
+    }
+
+    &-number {
+      padding: 15px 0px;
+      margin: 0;
+      color: inherit;
+    }
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0px;
+      width: 100%;
+      height: 100%;
+      text-transform: capitalize;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    &-content {
+      transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: opacity, height;
+      will-change: opacity, contents;
+
+      &:not(&-visible) {
+        height: 0 !important;
+        opacity: 0;
+      } 
+    }
+
+    &-list {
+      list-style: inside;
+      padding-bottom: 15px;
+      padding-left: 55px;
+
+      @media (max-width: 576px) {
+        padding-left: 0;
+      }
+    }
+
+    &-name {
+      font-size: 20px;
+    }
+  }
+}
