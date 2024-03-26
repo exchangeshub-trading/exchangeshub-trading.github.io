@@ -22,6 +22,11 @@ const HomeConstants: {
       showImage: true,
       showSocial: true,
       ref: TestimonialsConstants.get('robert')
+    },
+    {
+      showImage: true,
+      showSocial: true,
+      ref: TestimonialsConstants.get('francisco')
     }
   ]
 }

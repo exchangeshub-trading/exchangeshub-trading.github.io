@@ -1,8 +1,9 @@
 import { TestimonialContent } from '@/app/types/TestimonialsTypes'
-import Client1 from '@/public/assets/jpgs/Testimonials/Client1/Client1.png'
-import Client2 from '@/public/assets/jpgs/Testimonials/Client2/Client2.png'
+import davidIMG from '@/public/assets/jpgs/Testimonials/david/david.png'
+import robertIMG from '@/public/assets/jpgs/Testimonials/robert/robert.png'
+import franciscoIMG from '@/public/assets/jpgs/Testimonials/francisco/francisco.png'
 
-type KeyName = 'david' | 'robert'
+type KeyName = 'david' | 'robert' | 'francisco'
 
 const TestimonialsConstants: Map<KeyName, TestimonialContent> = new Map([
   ['david', {
@@ -14,7 +15,7 @@ const TestimonialsConstants: Map<KeyName, TestimonialContent> = new Map([
     author: {
       name: '🇦🇪 David',
       position: 'Anonymous Trader in UAE',
-      image: Client1,
+      image: davidIMG,
       social: []
     }
   }],
@@ -28,7 +29,20 @@ const TestimonialsConstants: Map<KeyName, TestimonialContent> = new Map([
     author: {
       name: '🇬🇧 Robert',
       position: 'Anonymous Crypto Portfolio Owner in London, UK',
-      image: Client2,
+      image: robertIMG,
+      social: []
+    }
+  }],
+  ['francisco', {
+    description: 'I\'ve been using the this app for a while now. ' +
+      'The team\'s communication is excellent, ensuring adequate responses to any concerns. ' +
+      'The app itself is impressively stable, providing reliable trade execution. ' +
+      'What\'s more, it\'s affordable and customizable to fit individual trading styles. ' +
+      'I use it not just as trading tool but also an investment platform. Recommend!',
+    author: {
+      name: '🇵🇹 Francisco',
+      position: 'Anonymous Trader/Investor in Lisbon, Portugal',
+      image: franciscoIMG,
       social: []
     }
   }]
