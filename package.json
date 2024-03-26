@@ -1,6 +1,6 @@
 {
   "name": "exchangeshub-trading.github.io",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "private": true,
   "scripts": {
     "dev": "next dev -p 5001",
