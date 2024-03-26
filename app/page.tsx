@@ -16,6 +16,12 @@ export default function Home() {
             <MainBanner />
           }
           {
+            HomeConstants.testimonialsPresent &&
+            <div id='testimonials'>
+              <Testimonials />
+            </div>
+          }
+          {
             HomeConstants.casesPresent &&
             <div id='showcases'>
               <Cases />
@@ -25,12 +31,6 @@ export default function Home() {
             HomeConstants.servicesPresent &&
             <div id='services'>
               <Services />
-            </div>
-          }
-          {
-            HomeConstants.testimonialsPresent &&
-            <div id='testimonials'>
-              <Testimonials />
             </div>
           }
         </div>

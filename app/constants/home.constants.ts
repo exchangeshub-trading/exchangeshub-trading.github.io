@@ -11,17 +11,17 @@ const HomeConstants: {
   mainBannerPresent: true,
   casesPresent: false,
   servicesPresent: true,
-  testimonialsPresent: false,
+  testimonialsPresent: true,
   testimonials: [
     {
       showImage: true,
       showSocial: true,
-      ref: TestimonialsConstants.get('client1')
+      ref: TestimonialsConstants.get('david')
     },
     {
       showImage: true,
       showSocial: true,
-      ref: TestimonialsConstants.get('client2')
+      ref: TestimonialsConstants.get('robert')
     }
   ]
 }
