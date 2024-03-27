@@ -19,11 +19,11 @@ const ApplicationConstants: {
   ],
   SOCIAL_ITEMS: [
     {
-      href: 'https://github.com/tech1-io',
-      name: 'github'
+      href: 'https://twitter.com/yyluchkiv',
+      name: 'twitter'
     },
     {
-      href: 'mailto:info@tech1.io',
+      href: 'mailto:info@yyluchkiv.com',
       name: 'mail'
     }
   ]
