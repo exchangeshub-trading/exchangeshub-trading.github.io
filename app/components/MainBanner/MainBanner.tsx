@@ -19,8 +19,8 @@ const MainBanner = () => {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          Crypto Trading<br/>
-          and more...
+          CryptoTrading Bots
+          {/*<br/>and more...*/}
         </h1>
         <div
           className='main-banner-description'
@@ -29,9 +29,9 @@ const MainBanner = () => {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          CryptoTrading [1]
+          Trade simultaneously on Binance, Bitfinex, and Kraken
           <br />
-          CryptoTrading [2]
+          Utilize pre-built established bots or create custom ones to suit your needs
         </div>
       </div>
     </div>

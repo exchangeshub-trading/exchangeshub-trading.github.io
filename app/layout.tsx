@@ -10,13 +10,13 @@ const jost = Jost({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://exchangeshub.trading/'),
-  title: 'ExchangesHub | CryptoTrading',
-  description: 'Tech1 is a software development team with 20+ accomplished projects since 2016',
+  title: 'ExchangesHub | CryptoTrading Bots',
+  description: 'Trade simultaneously on Binance, Bitfinex, and Kraken. Utilize pre-built established bots or create custom ones to suit your needs',
   icons: favicon.src,
   twitter: {
-    title: 'ExchangesHub | CryptoTrading',
+    title: 'ExchangesHub | CryptoTrading Bots',
     card: 'summary_large_image',
-    description: 'Tech1 is a software development team with 20+ accomplished projects since 2016',
+    description: 'Trade simultaneously on Binance, Bitfinex, and Kraken. Utilize pre-built established bots or create custom ones to suit your needs',
     images: [
       {
         type: "image/png",
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'ExchangesHub | CryptoTrading',
-    description: 'Tech1 is a software development team with 20+ accomplished projects since 2016',
-    url: 'https://tech1.io/',
-    siteName: 'tech1.io',
+    title: 'ExchangesHub | CryptoTrading Bots',
+    description: 'Trade simultaneously on Binance, Bitfinex, and Kraken. Utilize pre-built established bots or create custom ones to suit your needs',
+    url: 'https://exchangeshub.trading/',
+    siteName: 'exchangeshub.trading',
     images: [
       {
         type: "image/png",
