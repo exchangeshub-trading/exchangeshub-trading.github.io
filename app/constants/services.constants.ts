@@ -28,15 +28,14 @@ const ServicesConstants: Service[] = [
     showViewMore: false
   },
   {
-    type: 'feature3',
-    titleShort: 'Feature3',
-    titleLong: 'Feature3 [Long]',
+    type: 'security',
+    titleShort: 'How do we ensure data security?',
+    titleLong: 'How do we ensure data security?',
     text: `
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
+      We deploy our application to a dedicated server or cloud environment exclusively for your use.
       <br />
       <br />
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
+      Your data remains completely private and inaccessible to anyone else.
     `,
     showViewMore: false
   },
