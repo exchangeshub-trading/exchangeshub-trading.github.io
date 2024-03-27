@@ -162,7 +162,7 @@ const Header = () => {
                   </li>
                   <li>
                     <i className="ri-mail-line"></i>
-                    <a href="mailto:info@tech1.io">info@tech1.io</a>
+                    <a href="mailto:yyluchkiv@gmail.com">yyluchkiv@gmail.com</a>
                   </li>
                 </ul>
               </div>

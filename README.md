@@ -2,5 +2,6 @@
 ExchangesHub GitHub Pages on www.exchangeshub.trading
 
 ### TODOs
+0 - Google Analytics
 1 - Pricing
-2 - Google Analytics
+2 - "iam interested" input
