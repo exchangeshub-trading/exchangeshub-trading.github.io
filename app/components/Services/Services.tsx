@@ -7,7 +7,7 @@ import ServicesTypes from '@/app/types/ServicesTypes'
 import ServicesConstants from '@/app/constants/services.constants'
 
 const ServicesDesktop: React.FC<{ getListItemCssClass: (serviceType: ServicesTypes, activeItem: ServicesTypes ) => string }> = ({ getListItemCssClass }) => {
-  const [activeItem, setActiveItem] = useState<ServicesTypes>('feature1')
+  const [activeItem, setActiveItem] = useState<ServicesTypes>('exchanges-support')
 
   return (
     <div className='services-conteiner'>
@@ -152,7 +152,7 @@ const Services = () => {
           data-aos-duration='1200'
           data-aos-once='true'
         >
-          Our Features
+          Frequently Asked Questions
         </h2>
         <ServicesDesktop getListItemCssClass={ getListItemCssClass } />
         <ServicesMobile getListItemCssClass={ getListItemCssClass } />

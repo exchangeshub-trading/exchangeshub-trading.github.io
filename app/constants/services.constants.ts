@@ -2,38 +2,28 @@ import Service from '@/app/types/ServiceTypes'
 
 const ServicesConstants: Service[] = [
   {
-    type: 'feature1',
-    titleShort: 'Feature1',
-    titleLong: 'Feature1 [Long]',
+    type: 'exchanges-support',
+    titleShort: 'How many exchanges are supported?',
+    titleLong: 'How many exchanges are supported?',
     text: `
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
+      We currently support trading on three exchanges: Binance (spot and futures), Bitfinex, and Kraken (spot and futures).
       <br />
       <br />
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
+      Additionally, we are actively developing support for three more exchanges: Bybit, GateIO, and KuCoin.
     `,
     showViewMore: false
   },
   {
-    type: 'feature2',
-    titleShort: 'Feature2',
-    titleLong: 'Feature2 [Long]',
+    type: 'bots-support',
+    titleShort: 'How many bots do we offer?',
+    titleLong: 'How many bots do we offer?',
     text: `
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
+      All our customers prefer to craft their own bots with unique modifications. 
+      Currently, we support over 10 different bots/strategies.
       <br />
       <br />
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      <br />
-      <br />
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. 
+      Our platform offers an API for effortless bot creation. 
+      Additionally, we provide a basic arbitrage bot to help you grasp the functionality of our platform.
     `,
     showViewMore: false
   },
