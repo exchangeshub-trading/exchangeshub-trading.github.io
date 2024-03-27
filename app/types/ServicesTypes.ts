@@ -1,3 +1,3 @@
-type Services = 'exchanges-support' | 'bots-support' | 'security' | 'feature4' | 'feature5'
+type Services = 'exchanges-support' | 'bots-support' | 'bots-strategies' | 'security' | 'free-trial'
 
 export default Services
