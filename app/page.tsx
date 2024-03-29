@@ -38,14 +38,14 @@ export default function Home() {
 
         {/*Google Analytics*/}
         <div className="container">
-          <Script src="https://www.googletagmanager.com/gtag/js?id=G-4L5JR7N4LB" />
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-9PHRR8H1EM" />
           <Script id="google-analytics">
             {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'G-4L5JR7N4LB');
+          gtag('config', 'G-9PHRR8H1EM');
           `}
           </Script>
         </div>
