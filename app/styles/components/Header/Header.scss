@@ -1594,8 +1594,14 @@
   padding: 35px 30px 45px;
 }
 .sidebarModal.modal .modal-body .sidebar-logo {
-  transform: scale(3) translateX(5px);
+  transform: scale(3) translateX(1px);
   mix-blend-mode: lighten;
+}
+.sidebar-logo-text {
+  font-size: 25px;
+  top: 2px;
+  left: 30px;
+  position: relative;
 }
 .sidebarModal.modal .modal-body .sidebar-content {
   margin-top: 35px;
@@ -1707,6 +1713,12 @@
   transform: translateY(-5px);
   background-color: var(--scrollbar-track-color);
   color: var(--white-color);
+}
+
+.modal-body .title {
+  display: flex;
+  align-items: center;
+
 }
 
 @media only screen and (max-width: 1199px) {

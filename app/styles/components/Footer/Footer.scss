@@ -12,8 +12,16 @@
 }
 
 .single-footer-widget {
-  & .widget-logo a {
-    display: inline-block;
+  & .widget-logo {
+    display: flex;
+    flex-direction: row;
+
+    & .logo {
+      transform: scale(2.5) translateX(6px);
+      position: relative;
+      bottom: 15px;
+      right: 20px;
+    }
   }
 
   & p {
