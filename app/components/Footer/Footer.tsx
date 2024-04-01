@@ -31,7 +31,7 @@ const Footer = () => {
                   <h3>ExchangesHub</h3>
                 </div>
                 <p>
-                  ExchangeHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
+                  ExchangesHub powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
                 </p>
               </div>
             </div>

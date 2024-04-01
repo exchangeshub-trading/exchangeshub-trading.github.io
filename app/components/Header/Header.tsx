@@ -82,6 +82,7 @@ const Header = () => {
               <Link href='/' className='navbar-brand'>
                 <Image className='navbar-logo' src={ logoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
               </Link>
+              <p className='navbar-logo-text'>ExchangesHub</p>
 
               <button
                 onClick={ toggleNavbar }
@@ -149,7 +150,7 @@ const Header = () => {
 
               <div className='sidebar-content'>
                 <p>
-                  ExchangeHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
+                  ExchangesHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
                 </p>
               </div>
 
