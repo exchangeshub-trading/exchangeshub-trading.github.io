@@ -8,7 +8,7 @@ import '../../../node_modules/aos/dist/aos.css'
 import ApplicationConstants from '@/app/constants/app.constants'
 import DateUtility from '@/app/utilities/DateUtility'
 import Image from 'next/image';
-import logoIcon from '@/public/assets/pngs/Header/logo.png';
+import LogoIcon from '@/public/assets/pngs/Header/logo.png';
 
 const Footer = () => {
   useEffect(() => {
@@ -30,8 +30,8 @@ const Footer = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-logo">
-                  <Image className='logo' src={ logoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
-                  <h3>ExchangesHub</h3>
+                  <Image className='logo' src={ LogoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
+                  <h3 className='widget-logo-text'>ExchangesHub</h3>
                 </div>
                 <p>
                   ExchangesHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
