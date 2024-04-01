@@ -82,7 +82,7 @@ const Header = () => {
               <Link href='/' className='navbar-brand'>
                 <Image className='navbar-logo' src={ LogoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
               </Link>
-              <p className='navbar-logo-text'>ExchangesHub</p>
+              <h3 className='navbar-logo-text'>ExchangesHub</h3>
 
               <button
                 onClick={ toggleNavbar }
@@ -146,7 +146,7 @@ const Header = () => {
             <div className='modal-body'>
               <div className='title'>
                 <Image className='sidebar-logo' src={ LogoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
-                <p className='sidebar-logo-text'>ExchangesHub</p>
+                <h3 className='sidebar-logo-text'>ExchangesHub</h3>
               </div>
 
               <div className='sidebar-content'>

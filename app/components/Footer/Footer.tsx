@@ -31,7 +31,7 @@ const Footer = () => {
               <div className="single-footer-widget">
                 <div className="widget-logo">
                   <Image className='logo' src={ LogoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
-                  <p className='widget-logo-text'>ExchangesHub</p>
+                  <h3 className='widget-logo-text'>ExchangesHub</h3>
                 </div>
                 <p>
                   ExchangesHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
