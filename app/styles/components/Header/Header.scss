@@ -9,12 +9,14 @@
 .navbar-logo {
   transform: scale(2.5) translateX(6px);
   mix-blend-mode: lighten;
+  position: relative;
+  right: 15px;
 }
 .navbar-logo-text {
   font-size: 25px;
-  top: 10px;
-  left: 10px;
-  position: relative;
+  top: 5px;
+  left: 60px;
+  position: absolute;
 }
 .main-navbar {
   padding: 10px 0;
@@ -1594,13 +1596,15 @@
   padding: 35px 30px 45px;
 }
 .sidebarModal.modal .modal-body .sidebar-logo {
-  transform: scale(3) translateX(1px);
+  transform: scale(2.5) translateX(6px);
   mix-blend-mode: lighten;
+  position: relative;
+  right: 15px;
 }
 .sidebar-logo-text {
-  font-size: 23px;
-  top: 2px;
-  left: 15px;
+  font-size: 25px;
+  top: 5px;
+  left: 10px;
   position: relative;
 }
 .sidebarModal.modal .modal-body .sidebar-content {
