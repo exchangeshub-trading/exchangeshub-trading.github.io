@@ -145,7 +145,7 @@ const Header = () => {
 
             <div className='modal-body'>
               <div className='title'>
-                <Image className='sidebar-logo' src={ LogoIcon } alt='logo' width={ 36 } height={ 36 } priority={ true } />
+                <Image className='sidebar-logo' src={ LogoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
                 <p className='sidebar-logo-text'>ExchangesHub</p>
               </div>
 
