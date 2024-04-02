@@ -9,6 +9,7 @@ import ApplicationConstants from '@/app/constants/app.constants'
 import DateUtility from '@/app/utilities/DateUtility'
 import Image from 'next/image';
 import LogoIcon from '@/public/assets/pngs/Header/logo.png';
+import LaunchSoonSubscribe from '@/app/components/LaunchSoonSubscribe/LaunchSoonSubscribe'
 
 const Footer = () => {
   useEffect(() => {
@@ -63,6 +64,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      
+        <LaunchSoonSubscribe />
       <div
         className="copyright-area"
         data-aos="fade-in"
