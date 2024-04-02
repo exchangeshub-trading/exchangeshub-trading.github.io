@@ -64,8 +64,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      
-        <LaunchSoonSubscribe />
+      <LaunchSoonSubscribe />
       <div
         className="copyright-area"
         data-aos="fade-in"
