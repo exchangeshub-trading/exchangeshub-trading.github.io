@@ -13,10 +13,11 @@
     color: white;
     font-size: 20px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 .launch-soon-subscribe-area {
+    height: 100%;
     padding-top: 100px;
     padding-bottom: 120px;
     .subscribe-form {
@@ -45,6 +46,7 @@
                 font-size: 16px;
                 color: #666;
                 margin-right: 10px;
+                box-shadow: none !important;
                 &::placeholder {
                     color: #666;
                 }
