@@ -1,17 +1,27 @@
 
+.spinner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .spinner-border {
+        width: 3rem;
+        height: 3rem;
+        color: var(--main-color);
+    }
+}
 .succeeded {
     color: white;
     font-size: 20px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
-
 .launch-soon-subscribe-area {
+    height: 100%;
     padding-top: 100px;
     padding-bottom: 120px;
     .subscribe-form {
-        width: 100%;
+        width: 90%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -36,8 +46,12 @@
                 font-size: 16px;
                 color: #666;
                 margin-right: 10px;
+                box-shadow: none !important;
                 &::placeholder {
                     color: #666;
+                }
+                &:focus {
+                    outline: none !important;
                 }
             }
             .btn-primary {
@@ -57,9 +71,6 @@
             &:hover {
                 background-color: #333;
             }
-                .ri-arrow-right-line{
-                    padding-left: 5px; 
-                }
             } 
         }  
     }
