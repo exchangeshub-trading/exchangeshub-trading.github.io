@@ -27,7 +27,7 @@ const LaunchSoonSubscribe: React.FC = () => {
         return (
             <div className='launch-soon-subscribe-area'>
                 <div className="spinner-container">
-                    <FallingLines color="#4fa94d" width="100" visible={true} />
+                    <FallingLines color="#4fa94d" visible={true} />
                 </div>
             </div>
         );
