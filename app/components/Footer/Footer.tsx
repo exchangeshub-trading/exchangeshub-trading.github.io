@@ -7,6 +7,9 @@ import AOS from "aos"
 import '../../../node_modules/aos/dist/aos.css'
 import ApplicationConstants from '@/app/constants/app.constants'
 import DateUtility from '@/app/utilities/DateUtility'
+import Image from 'next/image';
+import LogoIcon from '@/public/assets/pngs/Header/logo.png';
+import LaunchSoonSubscribe from '@/app/components/LaunchSoonSubscribe/LaunchSoonSubscribe'
 
 const Footer = () => {
   useEffect(() => {
@@ -28,10 +31,11 @@ const Footer = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-logo">
-                  <h3>ExchangesHub</h3>
+                  <Image className='logo' src={ LogoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
+                  <h3 className='widget-logo-text'>ExchangesHub</h3>
                 </div>
                 <p>
-                  ExchangeHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
+                  ExchangesHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
                 </p>
               </div>
             </div>
@@ -60,6 +64,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <LaunchSoonSubscribe />
       <div
         className="copyright-area"
         data-aos="fade-in"

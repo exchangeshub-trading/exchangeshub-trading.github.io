@@ -12,8 +12,26 @@
 }
 
 .single-footer-widget {
-  & .widget-logo a {
-    display: inline-block;
+  & .widget-logo {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+
+    & .logo {
+      transform: scale(2.5) translateX(6px);
+      mix-blend-mode: lighten;
+      position: relative;
+      right: 15px;
+    }
+
+    & .widget-logo-text {
+      color: var(--white-color);
+      font-size: 25px;
+      top: 12px;
+      left: 60px;
+      position: absolute;
+      user-select: none;
+    }
   }
 
   & p {
@@ -143,7 +161,7 @@
 
 .copyright-area {
   background-color: var(--black-color);
-
+  margin-top: -50px;
   & .container {
     display: flex;
     flex-wrap: wrap;

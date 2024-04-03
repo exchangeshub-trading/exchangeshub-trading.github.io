@@ -4,7 +4,9 @@ import MainBanner from '@/app/components/MainBanner/MainBanner'
 import Cases from '@/app/components/Swipers/SwiperCases/Cases/Cases'
 import Services from '@/app/components/Services/Services'
 import Testimonials from '@/app/components/Testimonials/Testimonials'
+import LaunchSoonSubscribe from '@/app/components/LaunchSoonSubscribe/LaunchSoonSubscribe'
 import Footer from '@/app/components/Footer/Footer'
+
 
 export default function Home() {
   return (
@@ -19,6 +21,12 @@ export default function Home() {
             HomeConstants.testimonialsPresent &&
             <div id='testimonials'>
               <Testimonials />
+            </div>
+          }
+          {
+            HomeConstants.launchSoonSubscribe &&
+            <div id='launchsoonsubscribe'>
+              <LaunchSoonSubscribe />
             </div>
           }
           {

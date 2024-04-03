@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import logoIcon from '@/public/assets/pngs/Header/logo.png'
+import LogoIcon from '@/public/assets/pngs/Header/logo.png'
 import ApplicationConstants from '@/app/constants/app.constants'
 
 const Header = () => {
@@ -80,8 +80,9 @@ const Header = () => {
           <div className='container'>
             <nav className='navbar navbar-expand-lg navbar-light'>
               <Link href='/' className='navbar-brand'>
-                <Image className='navbar-logo' src={ logoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
+                <Image className='navbar-logo' src={ LogoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
               </Link>
+              <h3 className='navbar-logo-text'>ExchangesHub</h3>
 
               <button
                 onClick={ toggleNavbar }
@@ -144,12 +145,13 @@ const Header = () => {
 
             <div className='modal-body'>
               <div className='title'>
-                <Image className='sidebar-logo' src={ logoIcon } alt='logo' width={ 36 } height={ 36 } priority={ true } />
+                <Image className='sidebar-logo' src={ LogoIcon } alt='logo' width={ 50 } height={ 36 } priority={ true } />
+                <h3 className='sidebar-logo-text'>ExchangesHub</h3>
               </div>
 
               <div className='sidebar-content'>
                 <p>
-                  ExchangeHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
+                  ExchangesHub (powered by Tech1) is a platform to automate your crypto profits via trading bots on Binance, Bitfinex, and Kraken
                 </p>
               </div>
 

@@ -9,6 +9,16 @@
 .navbar-logo {
   transform: scale(2.5) translateX(6px);
   mix-blend-mode: lighten;
+  position: relative;
+  right: 15px;
+}
+.navbar-logo-text {
+  color: var(--white-color);
+  font-size: 25px;
+  top: 12px;
+  left: 60px;
+  position: absolute;
+  user-select: none;
 }
 .main-navbar {
   padding: 10px 0;
@@ -1588,8 +1598,18 @@
   padding: 35px 30px 45px;
 }
 .sidebarModal.modal .modal-body .sidebar-logo {
-  transform: scale(3) translateX(5px);
+  transform: scale(2.5) translateX(6px);
   mix-blend-mode: lighten;
+  position: relative;
+  right: 15px;
+}
+.sidebar-logo-text {
+  color: var(--white-color);
+  font-size: 25px;
+  top: 4px;
+  left: 10px;
+  position: relative;
+  user-select: none;
 }
 .sidebarModal.modal .modal-body .sidebar-content {
   margin-top: 35px;
@@ -1701,6 +1721,12 @@
   transform: translateY(-5px);
   background-color: var(--scrollbar-track-color);
   color: var(--white-color);
+}
+
+.modal-body .title {
+  display: flex;
+  align-items: center;
+
 }
 
 @media only screen and (max-width: 1199px) {

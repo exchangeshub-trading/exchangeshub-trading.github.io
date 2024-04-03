@@ -1,0 +1,92 @@
+
+.succeeded {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.launch-soon-subscribe-area {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    .subscribe-form {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        label::before {
+            content: "*";
+            color: red;
+          }
+        label {
+            padding: 10px 20px;
+            color: var(--white-color);
+        } 
+        .subscribe-form-input{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            input {
+                height: 50px;
+                background-color: var(--scrollbar-track-color);
+                border: none;
+                border-radius: 50px;
+                padding: 0 20px;
+                font-size: 16px;
+                color: #666;
+                margin-right: 10px;
+                &::placeholder {
+                    color: #666;
+                }
+            }
+            .btn-primary {
+            width: 20%;
+            background-color: var(--white-color);
+            color: var(--scrollbar-track-color);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            font-size: 16px;
+            border: none;
+            border-radius: 50px;
+            padding: 0 30px;
+            cursor: pointer;
+            &:hover {
+                background-color: #333;
+            }
+                .ri-arrow-right-line{
+                    padding-left: 5px; 
+                }
+            } 
+        }  
+    }
+    @media only screen and (max-width: 767px){
+        .subscribe-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label {
+                width: 100%;
+                text-align: center;
+            }
+            .subscribe-form-input{
+                flex-direction: column;
+                input {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+                .btn-primary {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
+            }  
+        }
+    }
+}
+

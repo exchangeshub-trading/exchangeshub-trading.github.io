@@ -6,7 +6,8 @@ const HomeConstants: {
   casesPresent: boolean,
   servicesPresent: boolean,
   testimonialsPresent: boolean,
-  testimonials: Testimonial[]
+  testimonials: Testimonial[],
+  launchSoonSubscribe: boolean
 } = {
   mainBannerPresent: true,
   casesPresent: false,
@@ -28,7 +29,8 @@ const HomeConstants: {
       showSocial: true,
       ref: TestimonialsConstants.get('francisco')
     }
-  ]
+  ], 
+  launchSoonSubscribe: true
 }
 
 export default HomeConstants
