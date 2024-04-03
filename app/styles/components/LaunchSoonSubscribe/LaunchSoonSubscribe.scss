@@ -1,3 +1,12 @@
+
+.succeeded {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 .launch-soon-subscribe-area {
     padding-top: 100px;
     padding-bottom: 120px;
@@ -32,10 +41,12 @@
                 }
             }
             .btn-primary {
+            width: 20%;
             background-color: var(--white-color);
             color: var(--scrollbar-track-color);
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
             height: 50px;
             font-size: 16px;
@@ -72,8 +83,10 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    width: 100%;
                 }
             }  
         }
     }
 }
+
