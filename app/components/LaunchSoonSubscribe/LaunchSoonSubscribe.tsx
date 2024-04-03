@@ -1,36 +1,42 @@
 'use client'
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { FallingLines } from 'react-loader-spinner';
 
 const LaunchSoonSubscribe: React.FC = () => {
-    const [state, handleSubmit] = useForm("moqgkrbz");
-    const [showConfirmation, setShowConfirmation] = useState(false); 
+    const [state, handleSubmit] = useForm("xjvnadyq");
+    const [submitSuccess, setSubmitSuccess] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
-    const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault(); 
-        await handleSubmit(e); 
+    const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        setIsLoading(true);
 
-        if (state.succeeded) {
-            setShowConfirmation(true); 
-            setTimeout(() => setShowConfirmation(false), 5000); 
-        }
+        await handleSubmit(event);
+
+        setIsLoading(false);
+        setSubmitSuccess(true);
+
+        setTimeout(() => {
+            setSubmitSuccess(false);
+        }, 3000);
     };
 
     return (
         <div className="launch-soon-subscribe-area">
-            {!showConfirmation && ( 
-                <form 
-                    className="subscribe-form" 
+            {!isLoading && !submitSuccess && (
+                <form
+                    className="subscribe-form"
                     onSubmit={handleFormSubmit}
-                    action="https://formspree.io/f/moqgkrbz"
+                    action="https://formspree.io/f/xjvnadyq"
                     method="POST"
                 >
                     <label htmlFor="email">Enter your email:</label>
                     <div className="subscribe-form-input">
-                        <input type="email" id="email" name="email" className="form-control" placeholder="your@email.com" />
-                        <ValidationError 
-                            prefix="Email" 
+                        <input type="email" id="email" name="email" className="form-control" placeholder="your@email.com"/>
+                        <ValidationError
+                            prefix="Email"
                             field="email"
                             errors={state.errors}
                         />
@@ -38,8 +44,12 @@ const LaunchSoonSubscribe: React.FC = () => {
                     </div>
                 </form>
             )}
-
-            {showConfirmation && ( 
+            {isLoading && (
+                <div className="spinner-container">
+                    <FallingLines color="#4fa94d" width="100" visible={true} />
+                </div>
+            )}
+            {submitSuccess && (
                 <p className='succeeded'>Your email has been submitted. You will get a response within 24 hours. Thank you! </p>
             )}
         </div>
