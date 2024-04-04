@@ -18,6 +18,7 @@
     align-items: center; 
     padding-top: 100px;
     padding-bottom: 120px;
+    padding-right: 20px;
     .subscribe-form {
         width: 90%;
         display: inline-flex;
@@ -28,7 +29,7 @@
             color: red;
           }
         label {
-            padding: 10px 20px;
+            padding: 5px;
             color: var(--white-color);
         } 
         .subscribe-form-input{
@@ -69,7 +70,14 @@
             &:hover {
                 background-color: #333;
             }
-            } 
+            }
+            .g-recaptcha {
+                display: block !important;
+                position: absolute;
+                margin: -50px 0 0 0 !important;
+                z-index: -999999;
+                opacity: 0;
+            }
         }  
     }
     @media only screen and (max-width: 767px){
