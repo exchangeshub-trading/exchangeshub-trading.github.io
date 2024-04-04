@@ -59,6 +59,7 @@ export default function Home() {
         </div>
       </main>
       <Footer />
+      <Script src="https://www.google.com/recaptcha/api.js" />
     </>
   )
 }
