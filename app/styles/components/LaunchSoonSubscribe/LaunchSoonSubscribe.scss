@@ -71,12 +71,10 @@
                 background-color: #333;
             }
             }
-            .g-recaptcha {
-                display: block !important;
-                position: absolute;
-                margin: -50px 0 0 0 !important;
-                z-index: -999999;
-                opacity: 0;
+            .recaptcha{
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }  
     }
