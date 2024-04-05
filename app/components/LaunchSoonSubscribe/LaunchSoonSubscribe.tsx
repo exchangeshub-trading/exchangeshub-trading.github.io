@@ -98,7 +98,7 @@ const LaunchSoonSubscribe: React.FC = () => {
                             <button type="button" className="btn-primary" disabled={state.submitting} onClick={handleGetStartedClick}>Get Started</button>
                         )}
                         {showCaptcha && (
-                            <button type="submit" className="btn-primary" disabled={!captchaValue || state.submitting}>Submit</button>
+                            <button type="submit" className="btn-primary" disabled={!captchaValue || state.submitting}>Get Started</button>
                         )}
                     </div>
                 </form>
