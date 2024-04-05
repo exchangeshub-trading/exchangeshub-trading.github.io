@@ -1,17 +1,28 @@
 
+
+.spinner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
 .succeeded {
     color: white;
     font-size: 20px;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 50px;
+    
 }
-
 .launch-soon-subscribe-area {
-    padding-top: 100px;
-    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-right: 20px;
     .subscribe-form {
-        width: 100%;
+        width: 90%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -20,7 +31,7 @@
             color: red;
           }
         label {
-            padding: 10px 20px;
+            padding: 5px;
             color: var(--white-color);
         } 
         .subscribe-form-input{
@@ -36,8 +47,12 @@
                 font-size: 16px;
                 color: #666;
                 margin-right: 10px;
+                box-shadow: none !important;
                 &::placeholder {
                     color: #666;
+                }
+                &:focus {
+                    outline: none !important;
                 }
             }
             .btn-primary {
@@ -57,10 +72,12 @@
             &:hover {
                 background-color: #333;
             }
-                .ri-arrow-right-line{
-                    padding-left: 5px; 
-                }
-            } 
+            }
+            .recaptcha{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }  
     }
     @media only screen and (max-width: 767px){
@@ -89,4 +106,7 @@
         }
     }
 }
+
+
+
 
