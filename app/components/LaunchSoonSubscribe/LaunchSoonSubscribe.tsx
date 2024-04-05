@@ -90,7 +90,7 @@ const LaunchSoonSubscribe: React.FC = () => {
                         <ReCAPTCHA
                             ref={recaptchaRef}
                             className='recaptcha'
-                            sitekey="6LctM68pAAAAANrY89BubPskNWd63i7cotYDwixX"
+                            sitekey="6Le7KbApAAAAAAcvfkWREiLAB0shr6sDauHnRP0e"
                             onChange={onChange}
                             size="invisible"
                         />
