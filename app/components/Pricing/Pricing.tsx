@@ -14,8 +14,10 @@ const Pricing = () => {
                             <div className="pricing-container-block">
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>
-                                <h2>{item.price}</h2>
-                                <a href="https://t.me/yyluchkiv" target="_blank">Talk in Telegram</a>
+                                <div className="price-cta">
+                                    <h2>{item.price}</h2>
+                                    <a href="https://t.me/yyluchkiv" target="_blank">Talk in Telegram</a>
+                                </div>
                             </div>
                             <div className="pricing-container-text">
                                 <ul>

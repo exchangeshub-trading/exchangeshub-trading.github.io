@@ -13,7 +13,7 @@ interface PricingItem {
 const list: PricingItem[] = [
     {
         title: "Free",
-        description: "Trade seamlessly on dedicated secured server on Binance using predefined bots with 7-days free trial",
+        description: "Trade seamlessly on dedicated secured server on Binance using predefined bots with 7-days free trial\n",
         price: "$0.00",
         features: [
             {
