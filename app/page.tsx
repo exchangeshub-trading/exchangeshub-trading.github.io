@@ -6,6 +6,7 @@ import Services from '@/app/components/Services/Services'
 import Testimonials from '@/app/components/Testimonials/Testimonials'
 import LaunchSoonSubscribe from '@/app/components/LaunchSoonSubscribe/LaunchSoonSubscribe'
 import Footer from '@/app/components/Footer/Footer'
+import Pricing from "./components/Pricing/Pricing";
 
 
 export default function Home() {
@@ -39,6 +40,18 @@ export default function Home() {
             HomeConstants.servicesPresent &&
             <div id='services'>
               <Services />
+            </div>
+          }
+          {
+            HomeConstants.servicesPresent &&
+            <div id='pricing'>
+              <Pricing />
+            </div>
+          }
+          {
+            HomeConstants.launchSoonSubscribe &&
+            <div id='launchsoonsubscribe'>
+              <LaunchSoonSubscribe />
             </div>
           }
         </div>
