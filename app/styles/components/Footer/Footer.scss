@@ -10,7 +10,6 @@
 .container.single-footer-widget {
   margin-bottom: 0;
 }
-
 .single-footer-widget {
   & .widget-logo {
     display: block;
@@ -168,12 +167,11 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 25px;
-    padding-bottom: 25px;
   }
 
   & .copyright-area-content {
     text-align: center;
-    padding: 10px 0;
+    padding: 50px 0;
     font-size: 14px;
     color: var(--paragraph-color);
   }

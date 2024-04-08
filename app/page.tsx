@@ -44,8 +44,14 @@ export default function Home() {
           }
           {
             HomeConstants.servicesPresent &&
-            <div id='services'>
+            <div id='pricing'>
               <Pricing />
+            </div>
+          }
+          {
+            HomeConstants.launchSoonSubscribe &&
+            <div id='launchsoonsubscribe'>
+              <LaunchSoonSubscribe />
             </div>
           }
         </div>
