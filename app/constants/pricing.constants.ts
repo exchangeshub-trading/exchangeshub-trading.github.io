@@ -15,7 +15,7 @@ interface PricingItem {
 const list: PricingItem[] = [
     {
         title: "Basic",
-        description: "Affordable and reliable for small businesses",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "$29.99",
         features: [
             {
@@ -42,7 +42,7 @@ const list: PricingItem[] = [
     },
     {
         title: "Standard",
-        description: "Best for small to medium businesses",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "$49.99",
         features: [
             {
@@ -69,7 +69,7 @@ const list: PricingItem[] = [
     },
     {
         title: "Premium",
-        description: "Best for medium to large businesses",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         price: "$99.99",
         features: [
             {
