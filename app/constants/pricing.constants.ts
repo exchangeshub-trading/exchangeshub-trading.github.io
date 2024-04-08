@@ -1,7 +1,5 @@
-import { IoCheckmark, IoCloseOutline } from 'react-icons/io5';
-
 interface Feature {
-    icon: typeof IoCheckmark | typeof IoCloseOutline; 
+    checkbox: boolean,
     text: string;
 }
 
@@ -14,83 +12,95 @@ interface PricingItem {
 
 const list: PricingItem[] = [
     {
-        title: "Basic",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: "$29.99",
+        title: "Free",
+        description: "Trade seamlessly on dedicated secured server on Binance using predefined bots with 7-days free trial\n",
+        price: "$0.00",
         features: [
             {
-                icon: IoCheckmark,
-                text: '1 GB of Storage'
+                checkbox: true,
+                text: 'Dedicated Server'
             },
             {
-                icon: IoCheckmark,
-                text: '2 Users'
+                checkbox: true,
+                text: 'Predefined Bots'
             },
             {
-                icon: IoCheckmark,
-                text: '24/7 Support'
+                checkbox: true,
+                text: 'Binance'
             },
             {
-                icon: IoCloseOutline,
-                text: 'Security Suite'
+                checkbox: false,
+                text: 'Bitfinex'
             },
             {
-                icon: IoCloseOutline,
-                text: 'Invoicing'
+                checkbox: false,
+                text: 'Kraken'
+            },
+            {
+                checkbox: false,
+                text: 'Custom Bots Development'
             }
         ]
     },
     {
-        title: "Standard",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: "$49.99",
+        title: "Quantum",
+        description: "Trade seamlessly on dedicated secured server on Binance, Bitfinex, and Kraken using predefined bots",
+        price: "$249.99",
         features: [
             {
-                icon: IoCheckmark,
-                text: "5 GB of Storage"
+                checkbox: true,
+                text: 'Dedicated Server'
             },
             {
-                icon: IoCheckmark,
-                text: "5 Users"
+                checkbox: true,
+                text: 'Predefined Bots'
             },
             {
-                icon: IoCheckmark,
-                text: "24/7 Support"
+                checkbox: true,
+                text: 'Binance'
             },
             {
-                icon: IoCloseOutline,
-                text: "Security Suite"
+                checkbox: true,
+                text: 'Bitfinex'
             },
             {
-                icon: IoCloseOutline,
-                text: "Invoicing"
+                checkbox: true,
+                text: 'Kraken'
+            },
+            {
+                checkbox: false,
+                text: 'Custom Bots Development'
             }
         ]
     },
     {
-        title: "Premium",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: "$99.99",
+        title: "Infinity",
+        description: "Trade seamlessly on dedicated secured server on Binance, Bitfinex, and Kraken using predefined bots and develop your own strategies",
+        price: "$999.99+",
         features: [
             {
-                icon: IoCheckmark,
-                text: "10 GB of Storage"
+                checkbox: true,
+                text: 'Dedicated Server'
             },
             {
-                icon: IoCheckmark,
-                text: "10 Users"
+                checkbox: true,
+                text: 'Predefined Bots'
             },
             {
-                icon: IoCheckmark,
-                text: "24/7 Support"
+                checkbox: true,
+                text: 'Binance'
             },
             {
-                icon: IoCheckmark,
-                text: "Security Suite"
+                checkbox: true,
+                text: 'Bitfinex'
             },
             {
-                icon: IoCheckmark,
-                text: "Invoicing"
+                checkbox: true,
+                text: 'Kraken'
+            },
+            {
+                checkbox: true,
+                text: 'Custom Bots Development'
             }
         ]
     }

@@ -20,12 +20,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     padding-top: 10px;
     .pricing-container {
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        flex-grow: 1;
         flex-wrap: wrap;
         margin: 10px;
         max-width: 330px;
@@ -34,7 +35,7 @@
         .pricing-container-block{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            height: 370px; 
             background-color: rgb(61, 59, 59);
             border-radius: 15px;
             padding: 30px;
@@ -51,7 +52,7 @@
                 h2, h3, p {
                     color: rgb(61, 59, 59);
                 }
-                button{
+                a{
                     background-color: rgb(61, 59, 59);
                     color: #f5f5f5;
                     transition: all 0.5s ease;
@@ -60,7 +61,13 @@
             h2, h3, p {
                 color: #f5f5f5;
             }
-            button{
+            .price-cta {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                justify-content: end;
+            }
+            a {
                 background-color: #efefef;
                 border: none;
                 color: rgb(92, 90, 90);
@@ -71,13 +78,14 @@
                 cursor: pointer;
                 padding: 10px 24px;
                 border-radius: 5px;
-                margin: 10px;
+                margin-top: 20px;
             }
         }
         .pricing-container-text{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            height: fit-content;
             padding-top: 35px;
             padding-bottom: 5px;
             background-color: rgba(46, 45, 45, 0.381);;
@@ -89,17 +97,17 @@
                 li {
                     color: #f5f5f5;
                 }
-            }    
+            }
         }
     }
     @keyframes fadeIn {
         from {
           opacity: 0;
-          transform: translateY(-20px); 
+          transform: translateY(-20px);
         }
         to {
           opacity: 1;
-          transform: translateY(20px); 
-        }  
+          transform: translateY(20px);
+        }
     }
 }
