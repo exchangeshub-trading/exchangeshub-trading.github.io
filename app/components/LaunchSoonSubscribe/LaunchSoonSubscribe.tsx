@@ -6,7 +6,7 @@ import { FallingLines } from 'react-loader-spinner';
 import ReCAPTCHA from "react-google-recaptcha";
 
 const LaunchSoonSubscribe: React.FC = () => {
-    const [state, handleSubmit] = useForm("moqgkrbz");
+    const [state, handleSubmit] = useForm("moqgkrbz...");
     const [submitSuccess, setSubmitSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
     const [captchaValue, setCaptchaValue] = useState<string | null>(null);
