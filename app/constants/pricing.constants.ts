@@ -12,83 +12,95 @@ interface PricingItem {
 
 const list: PricingItem[] = [
     {
-        title: "Basic",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: "$29.99",
+        title: "Free",
+        description: "Trade seamlessly on dedicated secured server on Binance using predefined bots with 7-days free trial",
+        price: "$0.00",
         features: [
             {
                 checkbox: true,
-                text: '1 GB of Storage'
+                text: 'Dedicated Server'
             },
             {
                 checkbox: true,
-                text: '2 Users'
+                text: 'Predefined Bots'
             },
             {
                 checkbox: true,
-                text: '24/7 Support'
+                text: 'Binance'
             },
             {
                 checkbox: false,
-                text: 'Security Suite'
+                text: 'Bitfinex'
             },
             {
                 checkbox: false,
-                text: 'Invoicing'
+                text: 'Kraken'
+            },
+            {
+                checkbox: false,
+                text: 'Custom Bots Development'
             }
         ]
     },
     {
-        title: "Standard",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: "$49.99",
+        title: "Quantum",
+        description: "Trade seamlessly on dedicated secured server on Binance, Bitfinex, and Kraken using predefined bots",
+        price: "$249.99",
         features: [
             {
                 checkbox: true,
-                text: "5 GB of Storage"
+                text: 'Dedicated Server'
             },
             {
                 checkbox: true,
-                text: "5 Users"
+                text: 'Predefined Bots'
             },
             {
                 checkbox: true,
-                text: "24/7 Support"
+                text: 'Binance'
             },
             {
                 checkbox: true,
-                text: "Security Suite"
+                text: 'Bitfinex'
+            },
+            {
+                checkbox: true,
+                text: 'Kraken'
             },
             {
                 checkbox: false,
-                text: "Invoicing"
+                text: 'Custom Bots Development'
             }
         ]
     },
     {
-        title: "Premium",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        price: "$99.99",
+        title: "Infinity",
+        description: "Trade seamlessly on dedicated secured server on Binance, Bitfinex, and Kraken using predefined bots and develop your own strategies",
+        price: "$999.99+",
         features: [
             {
                 checkbox: true,
-                text: "10 GB of Storage"
+                text: 'Dedicated Server'
             },
             {
                 checkbox: true,
-                text: "10 Users"
+                text: 'Predefined Bots'
             },
             {
                 checkbox: true,
-                text: "24/7 Support"
+                text: 'Binance'
             },
             {
                 checkbox: true,
-                text: "Security Suite"
+                text: 'Bitfinex'
             },
             {
                 checkbox: true,
-                text: "Invoicing"
+                text: 'Kraken'
+            },
+            {
+                checkbox: true,
+                text: 'Custom Bots Development'
             }
         ]
     }
