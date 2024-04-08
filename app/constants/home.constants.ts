@@ -5,6 +5,7 @@ const HomeConstants: {
   mainBannerPresent: boolean,
   casesPresent: boolean,
   servicesPresent: boolean,
+  pricingPresent: boolean,
   testimonialsPresent: boolean,
   testimonials: Testimonial[],
   launchSoonSubscribe: boolean
@@ -12,6 +13,7 @@ const HomeConstants: {
   mainBannerPresent: true,
   casesPresent: false,
   servicesPresent: true,
+  pricingPresent: true,
   testimonialsPresent: true,
   testimonials: [
     {
@@ -29,7 +31,7 @@ const HomeConstants: {
       showSocial: true,
       ref: TestimonialsConstants.get('francisco')
     }
-  ], 
+  ],
   launchSoonSubscribe: true
 }
 

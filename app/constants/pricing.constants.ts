@@ -1,7 +1,5 @@
-import { IoCheckmark, IoCloseOutline } from 'react-icons/io5';
-
 interface Feature {
-    icon: typeof IoCheckmark | typeof IoCloseOutline; 
+    checkbox: boolean,
     text: string;
 }
 
@@ -19,23 +17,23 @@ const list: PricingItem[] = [
         price: "$29.99",
         features: [
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: '1 GB of Storage'
             },
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: '2 Users'
             },
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: '24/7 Support'
             },
             {
-                icon: IoCloseOutline,
+                checkbox: false,
                 text: 'Security Suite'
             },
             {
-                icon: IoCloseOutline,
+                checkbox: false,
                 text: 'Invoicing'
             }
         ]
@@ -46,23 +44,23 @@ const list: PricingItem[] = [
         price: "$49.99",
         features: [
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: "5 GB of Storage"
             },
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: "5 Users"
             },
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: "24/7 Support"
             },
             {
-                icon: IoCloseOutline,
+                checkbox: true,
                 text: "Security Suite"
             },
             {
-                icon: IoCloseOutline,
+                checkbox: false,
                 text: "Invoicing"
             }
         ]
@@ -73,23 +71,23 @@ const list: PricingItem[] = [
         price: "$99.99",
         features: [
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: "10 GB of Storage"
             },
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: "10 Users"
             },
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: "24/7 Support"
             },
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: "Security Suite"
             },
             {
-                icon: IoCheckmark,
+                checkbox: true,
                 text: "Invoicing"
             }
         ]

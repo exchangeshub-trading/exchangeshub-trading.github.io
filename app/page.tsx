@@ -8,7 +8,6 @@ import LaunchSoonSubscribe from '@/app/components/LaunchSoonSubscribe/LaunchSoon
 import Footer from '@/app/components/Footer/Footer'
 import Pricing from "./components/Pricing/Pricing";
 
-
 export default function Home() {
   return (
     <>
@@ -43,7 +42,7 @@ export default function Home() {
             </div>
           }
           {
-            HomeConstants.servicesPresent &&
+            HomeConstants.pricingPresent &&
             <div id='pricing'>
               <Pricing />
             </div>

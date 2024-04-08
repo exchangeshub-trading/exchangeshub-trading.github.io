@@ -6,7 +6,7 @@ import { FallingLines } from 'react-loader-spinner';
 import ReCAPTCHA from "react-google-recaptcha";
 
 const LaunchSoonSubscribe: React.FC = () => {
-    const [state, handleSubmit] = useForm("moqgkrbz...");
+    const [state, handleSubmit] = useForm("moqgkrbz");
     const [submitSuccess, setSubmitSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
     const [captchaValue, setCaptchaValue] = useState<string | null>(null);
@@ -30,7 +30,7 @@ const LaunchSoonSubscribe: React.FC = () => {
 
     const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-      
+
         setLoading(true);
 
         await handleSubmit(event);
@@ -65,7 +65,7 @@ const LaunchSoonSubscribe: React.FC = () => {
     if (submitSuccess) {
         return (
             <div className='launch-soon-subscribe-area'>
-                <p className='succeeded'>Your email has been submitted. You will get a response within 24 hours. Thank you! </p>  
+                <p className='succeeded'>Your email has been submitted. You will get a response within 24 hours. Thank you! </p>
             </div>
         );
     }

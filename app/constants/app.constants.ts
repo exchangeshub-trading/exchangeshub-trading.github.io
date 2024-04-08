@@ -19,6 +19,10 @@ const ApplicationConstants: {
   ],
   SOCIAL_ITEMS: [
     {
+      href: 'https://t.me/yyluchkiv',
+      name: 'telegram'
+    },
+    {
       href: 'https://twitter.com/yyluchkiv',
       name: 'twitter'
     },
