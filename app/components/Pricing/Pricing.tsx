@@ -23,7 +23,9 @@ const Pricing = () => {
                                 <ul>
                                     {item.features.map((feature, idx) => (
                                         <li key={idx}>
-                                            {feature.checkbox ? <IoCheckmark /> : <IoCloseOutline />}
+                                            {feature.checkbox ? 
+                                            <IoCheckmark className="checkmark-icon"/> : 
+                                            <IoCloseOutline className="close-icon"/>}
                                             {feature.text}
                                         </li>
                                     ))}
