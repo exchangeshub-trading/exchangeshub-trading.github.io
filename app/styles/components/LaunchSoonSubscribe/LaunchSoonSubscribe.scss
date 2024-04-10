@@ -81,6 +81,10 @@
                 justify-content: center;
                 align-items: center;
             }
+            .recaptcha{
+               
+                z-index: 12;
+            }
         } 
     }
     @media only screen and (max-width: 767px){
