@@ -32,6 +32,8 @@
         label {
             padding: 5px;
             color: var(--white-color);
+            user-select: none;
+            cursor: text;
         } 
         .subscribe-form-input{
             width: 70%;
