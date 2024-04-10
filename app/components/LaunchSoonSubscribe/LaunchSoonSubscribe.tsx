@@ -6,7 +6,7 @@ import { FallingLines } from 'react-loader-spinner';
 import ReCAPTCHA from "react-google-recaptcha";
 
 const LaunchSoonSubscribe: React.FC = () => {
-    const [state, handleSubmit] = useForm("xjvnadyq");
+    const [state, handleSubmit] = useForm("moqgkrbz");
     const [submitSuccess, setSubmitSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
     const [captchaValue, setCaptchaValue] = useState<string | null>(null);
@@ -102,7 +102,7 @@ const LaunchSoonSubscribe: React.FC = () => {
                 <form
                     className="subscribe-form"
                     onSubmit={handleFormSubmit}
-                    action="https://formspree.io/f/xjvnadyq"
+                    action="https://formspree.io/f/moqgkrbz"
                     method="POST"
                 >
                     <label 
@@ -129,7 +129,7 @@ const LaunchSoonSubscribe: React.FC = () => {
                         <ReCAPTCHA
                             ref={recaptchaRef}
                             className='recaptcha'
-                            sitekey="6LctM68pAAAAANrY89BubPskNWd63i7cotYDwixX"
+                            sitekey="6Le7KbApAAAAAAcvfkWREiLAB0shr6sDauHnRP0e"
                             onChange={onChange}
                             size="invisible"
                         />
