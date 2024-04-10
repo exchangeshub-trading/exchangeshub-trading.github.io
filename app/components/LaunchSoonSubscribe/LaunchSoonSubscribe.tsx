@@ -99,7 +99,11 @@ const LaunchSoonSubscribe: React.FC = () => {
                     action="https://formspree.io/f/moqgkrbz"
                     method="POST"
                 >
-                    <label htmlFor="email" style={{ color: emailError ? 'var(--red-color)' : 'inherit' }}>
+                    <label 
+                        htmlFor="email" 
+                        style={{ color: emailError ? 'var(--red-color)' : 'inherit' }}
+                        onClick={(e) => e.preventDefault()}
+                    >
                         {emailError ? emailError : 'Enter your email:'}
                     </label>
                     <div className="subscribe-form-input">
