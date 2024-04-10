@@ -6,7 +6,7 @@ import { FallingLines } from 'react-loader-spinner';
 import ReCAPTCHA from "react-google-recaptcha";
 
 const LaunchSoonSubscribe: React.FC = () => {
-    const [state, handleSubmit] = useForm("moqgkrbz");
+    const [state, handleSubmit] = useForm("xjvnadyq");
     const [submitSuccess, setSubmitSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
     const [captchaValue, setCaptchaValue] = useState<string | null>(null);
@@ -28,21 +28,21 @@ const LaunchSoonSubscribe: React.FC = () => {
     };
 
     useEffect(() => {
-        if (emailError) {
+        if (emailError || !email) {
             setValidForm(false);
+            setShowGetStartedButton(true);
         } else {
             setValidForm(true);
+            setShowGetStartedButton(true);
         }
-    }, [emailError]);
+    }, [emailError, email]);
 
     useEffect(() => {
         setShowCaptcha(false);
         setShowGetStartedButton(true);
-    }, []);
-
-    useEffect(() => {
-        setShowCaptcha(false);
-        setShowGetStartedButton(true);
+        setSubmitSuccess(false);
+        setEmail('');
+        setEmailError('');
     }, [submitSuccess]);
 
     const onChange = (value: string | null) => {
@@ -52,6 +52,9 @@ const LaunchSoonSubscribe: React.FC = () => {
     const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
       
+        if (!email || !validForm) {
+            return; 
+        }
         setLoading(true);
 
         await handleSubmit(event);
@@ -65,6 +68,9 @@ const LaunchSoonSubscribe: React.FC = () => {
     };
 
     const handleGetStartedClick = () => {
+        if (!email || !validForm) {
+            return; 
+        }
         setShowCaptcha(true);
         setShowGetStartedButton(false);
         if (recaptchaRef.current) {
@@ -92,11 +98,11 @@ const LaunchSoonSubscribe: React.FC = () => {
 
     return (
         <div className="launch-soon-subscribe-area">
-            {!loading && !submitSuccess && (
+            {!loading && !submitSuccess &&  (
                 <form
                     className="subscribe-form"
                     onSubmit={handleFormSubmit}
-                    action="https://formspree.io/f/moqgkrbz"
+                    action="https://formspree.io/f/xjvnadyq"
                     method="POST"
                 >
                     <label 
@@ -123,7 +129,7 @@ const LaunchSoonSubscribe: React.FC = () => {
                         <ReCAPTCHA
                             ref={recaptchaRef}
                             className='recaptcha'
-                            sitekey="6Le7KbApAAAAAAcvfkWREiLAB0shr6sDauHnRP0e"
+                            sitekey="6LctM68pAAAAANrY89BubPskNWd63i7cotYDwixX"
                             onChange={onChange}
                             size="invisible"
                         />
@@ -131,12 +137,11 @@ const LaunchSoonSubscribe: React.FC = () => {
                             <button 
                                 type="button" 
                                 className="btn-primary" 
-                                disabled={!validForm || state.submitting} 
+                                disabled={!email || !validForm || state.submitting} 
                                 onClick={handleGetStartedClick}
                                 style={{
-                                    opacity: !validForm || state.submitting ? 0.5 : 1, 
-                                    cursor: !validForm || state.submitting ? 'not-allowed' : 'pointer', 
-                                   
+                                    opacity: (!email || !validForm || state.submitting) ? 0.5 : 1, 
+                                    cursor: (!email || !validForm || state.submitting) ? 'not-allowed' : 'pointer',  
                                 }}
                             >
                                 Get Started
