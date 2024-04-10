@@ -13,6 +13,27 @@ const LaunchSoonSubscribe: React.FC = () => {
     const [showCaptcha, setShowCaptcha] = useState(false);
     const [showGetStartedButton, setShowGetStartedButton] = useState(true);
     const recaptchaRef = useRef<any>(null);
+    const [email, setEmail] = useState('');
+    const [emailError, setEmailError] = useState('');
+    const [validForm, setValidForm] = useState(false);
+
+    const emailHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setEmail(e.target.value);
+        let regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+        if (!regex.test(String(e.target.value).toLowerCase())) {
+            setEmailError('Please enter a valid email');
+        } else {
+            setEmailError('');
+        }
+    };
+
+    useEffect(() => {
+        if (emailError) {
+            setValidForm(false);
+        } else {
+            setValidForm(true);
+        }
+    }, [emailError]);
 
     useEffect(() => {
         setShowCaptcha(false);
@@ -30,7 +51,7 @@ const LaunchSoonSubscribe: React.FC = () => {
 
     const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-
+      
         setLoading(true);
 
         await handleSubmit(event);
@@ -51,7 +72,6 @@ const LaunchSoonSubscribe: React.FC = () => {
         }
     };
 
-
     if (loading) {
         return (
             <div className='launch-soon-subscribe-area'>
@@ -65,7 +85,7 @@ const LaunchSoonSubscribe: React.FC = () => {
     if (submitSuccess) {
         return (
             <div className='launch-soon-subscribe-area'>
-                <p className='succeeded'>Your email has been submitted. You will get a response within 24 hours. Thank you! </p>
+                <p className='succeeded'>Your email has been submitted. You will get a response within 24 hours. Thank you! </p>  
             </div>
         );
     }
@@ -79,9 +99,18 @@ const LaunchSoonSubscribe: React.FC = () => {
                     action="https://formspree.io/f/moqgkrbz"
                     method="POST"
                 >
-                    <label htmlFor="email">Enter your email:</label>
+                    <label htmlFor="email" style={{ color: emailError ? 'var(--red-color)' : 'inherit' }}>
+                        {emailError ? emailError : 'Enter your email:'}
+                    </label>
                     <div className="subscribe-form-input">
-                        <input type="email" id="email" name="email" className="form-control" placeholder="your@email.com"/>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            className="form-control" 
+                            placeholder="your@email.com" 
+                            onChange={e => emailHandler(e)}
+                        />
                         <ValidationError
                             prefix="Email"
                             field="email"
@@ -95,10 +124,28 @@ const LaunchSoonSubscribe: React.FC = () => {
                             size="invisible"
                         />
                         {showGetStartedButton && (
-                            <button type="button" className="btn-primary" disabled={state.submitting} onClick={handleGetStartedClick}>Get Started</button>
+                            <button 
+                                type="button" 
+                                className="btn-primary" 
+                                disabled={!validForm || state.submitting} 
+                                onClick={handleGetStartedClick}
+                                style={{
+                                    opacity: !validForm || state.submitting ? 0.5 : 1, 
+                                    cursor: !validForm || state.submitting ? 'not-allowed' : 'pointer', 
+                                   
+                                }}
+                            >
+                                Get Started
+                            </button>
                         )}
                         {showCaptcha && (
-                            <button type="submit" className="btn-primary" disabled={!captchaValue || state.submitting}>Get Started</button>
+                            <button 
+                                type="submit" 
+                                className="btn-primary" 
+                                disabled={!captchaValue || state.submitting}
+                            >
+                                Get Started
+                            </button>
                         )}
                     </div>
                 </form>
