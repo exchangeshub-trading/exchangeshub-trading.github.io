@@ -173,8 +173,8 @@
 
 @media (max-width: 768px) {
   .services {
-    &-content {
-      &-button {
+    &-mobile {
+      &-item {
         & .default-btn {
           padding: 10px 15px;
         }
@@ -186,6 +186,20 @@
         &-button {
           width: 36px;
           height: 36px;
+        }
+      }
+      
+    }
+  }
+}
+
+@media (max-width: 418px) {
+  .services {
+    &-mobile {
+      &-item {
+        &-button {
+          width: 24px;
+          height: 24px;
         }
       }
     }

@@ -1680,7 +1680,7 @@
   .info-list
   li
   .ri-mail-line {
-  color: #ff414b;
+  color: var(--red-color);
 }
 .sidebarModal.modal
   .modal-body
@@ -1890,8 +1890,5 @@
   }
 }
 
-@media (max-width: 320px) {
-  .modal.right .modal-dialog {
-    width: 250px;
-  }
-}
+
+
